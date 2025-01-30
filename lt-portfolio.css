@@ -1,0 +1,117 @@
+.image_off, #home:hover .image_on{
+    display:none
+ }
+ .image_on, #home:hover .image_off{
+    display:block
+ }
+
+/* Back to top button */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1A5051;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+    opacity: 1;
+}
+
+/* Project Card Flip */
+/* Wrapper for each card */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    perspective: 1000px;
+}
+
+/* Inner card container (handles flip effect) */
+.project-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.project-card:hover .project-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front side of the card */
+.project-card-front,
+/* Back side of the card */
+.project-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+/* Front card (image + text) */
+.project-card-front {
+    background-color: #E5E4E2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* Back card (about text) */
+.project-card-back {
+    background-color: #9CC5A1;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+}
+
+.project-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1F2421;
+}
+
+.project-card-description {
+    color: #1A5051;
+    margin-top: 8px;
+}
+
+.project-card-about {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.project-card-link {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.project-card-link a {
+    text-decoration: none;
+    background-color: #1F2421;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-card-link a:hover {
+    background-color: #9CC5A1;
+}

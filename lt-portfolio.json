@@ -1,0 +1,28 @@
+{
+    "projects": [
+      {
+        "title": "HTML webpage about The Solar System",
+        "description": "Utilising HTML, CSS and Javascript to build a webpage and a contact page containing a form.",
+        "image": "images/solar-system.jpeg",
+        "link": "https://link-to-project-one.com",
+        "github": "https://github.com/timtamslammer",
+        "about": "This is a description of the project in more detail"
+      },
+      {
+        "title": "Practice Site",
+        "description": "Webpage built using HTML and Flexbox",
+        "image": "images/practice-site.jpg",
+        "link": "https://link-to-project-two.com",
+        "github": "https://github.com/timtamslammer",
+        "about": "This is a description of the project in more detail"
+      },
+      {
+        "title": "Fake Business Site",
+        "description": "Building a site about the Solar System using HTML",
+        "image": "images/fake-business.png",
+        "link": "https://link-to-project-three.com",
+        "github": "https://github.com/timtamslammer",
+        "about": "This is a description of the project in more detail"
+      }
+    ]
+  }
