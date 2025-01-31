@@ -9,8 +9,7 @@ fetch('lt-portfolio.json')
         data.projects.forEach(project => {
             // Create the card wrapper
             const projectCard = document.createElement('a');
-            // projectCard.href = project.link;
-            projectCard.classList.add('project-card', 'block', 'rounded-lg', 'shadow-lg', 'overflow-hidden', 'transition', 'transform', 'hover:scale-105');
+            projectCard.classList.add('project-card', 'block', 'rounded-lg', 'shadow-lg', 'overflow-hidden', 'transition', 'transform', 'hover:scale-105', 'project-card-clickable');
 
             // Create inner card wrapper for flip effect
             const cardInner = document.createElement('div');
@@ -47,13 +46,24 @@ fetch('lt-portfolio.json')
             cardFront.appendChild(projectDescription);
             cardFront.appendChild(projectLink);
 
-            // Back side of the card (about text)
+            // Back side of the card (about text and GitHub button)
             const cardBack = document.createElement('div');
             cardBack.classList.add('project-card-back');
             const projectAbout = document.createElement('p');
             projectAbout.textContent = project.about;
             projectAbout.classList.add('project-card-about');
             cardBack.appendChild(projectAbout);
+
+            // GitHub button with link to GitHub (icon)
+            const githubButton = document.createElement('div');
+            githubButton.classList.add('github-button');
+            const githubLink = document.createElement('a');
+            githubLink.href = project.github;
+            githubLink.target = "_blank";
+            githubLink.innerHTML = `<i class="fa-brands fa-github"></i>`; // GitHub icon
+            githubButton.appendChild(githubLink);
+
+            cardBack.appendChild(githubButton);
 
             // Append the front and back to the card's inner container
             cardInner.appendChild(cardFront);
@@ -62,13 +72,19 @@ fetch('lt-portfolio.json')
             // Append the inner card to the project card wrapper
             projectCard.appendChild(cardInner);
 
+            // Add event listener for flip on mobile
+            projectCard.addEventListener('click', (e) => {
+                if (window.innerWidth <= 767) { // Check if it's mobile
+                    e.preventDefault(); // Prevent the default behavior (navigate)
+                    projectCard.classList.toggle('flipped');
+                }
+            });
+
             // Append the project card to the container
             projectsContainer.appendChild(projectCard);
         });
     })
-    .catch(error => console.error('Error loading the JSON data:', error
-
-    ));
+    .catch(error => console.error('Error loading the JSON data:', error));
 
 // Enhance socials buttons on hover
 const icons = document.querySelectorAll('#socials i');
