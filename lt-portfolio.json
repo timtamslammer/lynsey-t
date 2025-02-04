@@ -2,27 +2,27 @@
     "projects": [
       {
         "title": "HTML webpage about The Solar System",
-        "description": "Utilising HTML, CSS and Javascript to build a webpage and a contact page containing a form.",
+        "description": "Utilising HTML, CSS and Javascript to build a webpage with a contact page containing a form.",
         "image": "images/solar-system.jpeg",
-        "link": "https://link-to-project-one.com",
+        "link": "",
         "github": "https://github.com/timtamslammer",
-        "about": "This is a description of the project in more detail"
+        "about": "Lorem ipsum odor amet, consectetuer adipiscing elit. Non nibh aptent luctus luctus leo. Conubia eget vehicula nostra volutpat amet interdum nisl nunc facilisi. Tellus habitasse congue aenean gravida cursus bibendum at non. Sem ex cras integer per dis quis litora condimentum. Magnis rutrum dictum sit laoreet dui porta. Integer condimentum justo fames commodo ullamcorper orci proin. Suspendisse neque facilisis eleifend, nibh taciti iaculis."
       },
       {
         "title": "Practice Site",
         "description": "Webpage built using HTML and Flexbox",
         "image": "images/practice-site.jpg",
-        "link": "https://link-to-project-two.com",
+        "link": "",
         "github": "https://github.com/timtamslammer",
-        "about": "This is a description of the project in more detail"
+        "about": "Sed sed nostra mi dapibus facilisi? Est fusce montes consectetur torquent aptent amet. Lectus felis iaculis fringilla imperdiet senectus? Lacus platea orci parturient magna phasellus maximus mauris conubia vulputate. Tortor facilisi morbi imperdiet fames cubilia; magnis ad convallis mauris. Rhoncus bibendum faucibus justo malesuada semper nam. Neque non ligula dictumst posuere amet nisl curae. Nisi urna pulvinar sollicitudin senectus aenean montes fusce ornare."
       },
       {
         "title": "Fake Business Site",
-        "description": "Building a site about the Solar System using HTML",
+        "description": "Harnessing the raw power of HTML and... GRID.",
         "image": "images/fake-business.png",
-        "link": "https://link-to-project-three.com",
+        "link": "",
         "github": "https://github.com/timtamslammer",
-        "about": "This is a description of the project in more detail"
+        "about": "Hac parturient faucibus posuere amet lacinia nam sagittis nec! Ac tortor nec per primis nullam senectus inceptos etiam odio. Et imperdiet amet porttitor posuere, tincidunt laoreet. Justo habitasse tortor at aliquet eros diam nostra. Nascetur vehicula libero porta; pellentesque eros sem pharetra felis. Nisl elementum tellus scelerisque lobortis aptent semper. Consequat justo curabitur nunc orci sapien morbi suscipit; urna quis. Pharetra libero sodales aenean aliquam, litora faucibus euismod."
       }
     ]
   }
